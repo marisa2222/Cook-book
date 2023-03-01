@@ -1,0 +1,2 @@
+
+    alert('my alert message');
