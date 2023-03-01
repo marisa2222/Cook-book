@@ -1,24 +1,26 @@
-
-.receta {
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
-
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url(img/bg_img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.receta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 
 .main-section {
     width: 80%;
     margin: 65px auto;
-    background-color: rgb(234, 113, 27);
+    background-color: rgb(248, 162, 100);
     border: 2px solid black;
     border-radius: 30px;
 }
@@ -29,38 +31,82 @@ body {
 
 .main-section .container .head {
     font-family: 'Tilt Prism', cursive;
-    color: white;
+    color: rgb(0, 0, 0);
     font-style: italic;
-    margin: 0 30%;
+    margin: 0 20%;
 }
 
 .main-section .container .head h1 {
-    font-size: 2.5em;
+    font-size: 2.7em;
+    text-shadow: 2px 2px 5px rgb(19, 62, 233);
 }
 
 .main-section .container hr {
     color: white;
     border: 1px solid white;
     border-radius: 5px;
-    width: 55em;
-    margin-left: 8px;
+    width: 90%;
+    margin-left: 5%;
 }
 
-.main-section .container .img img {
+.main-section .container img {
     border: 12px solid rgb(255, 255, 255);
-    margin-left: 49px;
-    width: 90%;
-    height: 10%;
+    margin-left: 80px;
+    width: 85%;
+    height: auto;
     border-radius: 35px;
 }
 
+@media screen and (max-width:1600px) {
+    .main-section .container .head {
+        margin: 0 14%;
+    }
+
+    .main-section .container .head h1 {
+        font-size: 2.3em;
+    }
+
+    .main-section .container hr {
+        margin-left: 6%;
+    }
+
+    .main-section .container img {
+        margin-left: 70px;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .main-section .container {
+        padding: 30px 7px;
+    }
+
+    .main-section .container .head {
+        margin: 0 10%;
+    }
+
+    .main-section .container .head h1 {
+        font-size: 2em;
+    }
+
+    .main-section .container hr {
+        margin-left: 6%;
+    }
+
+    .main-section .container img {
+        margin-left: 55px;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:480) {}
+
 ul.a {
-    list-style-type:square ;
+    list-style-type: square;
 }
-  
+
 ul.b {
-  list-style-type: lower-alpha;
+    list-style-type: lower-alpha;
 }
-
-
-
