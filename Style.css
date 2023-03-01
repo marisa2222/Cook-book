@@ -8,13 +8,25 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
+
 
 .receta {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.icons {
+    margin: 10px;
+    margin-left: 66%;
+}
+
+.icons svg {
+    margin: 15px;
+}
+
 
 
 .main-section {
@@ -109,4 +121,10 @@ ul.a {
 
 ul.b {
     list-style-type: lower-alpha;
+}
+
+img {
+    width: 100%;
+    max-height: 550px;
+
 }
